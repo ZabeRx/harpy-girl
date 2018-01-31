@@ -3,15 +3,18 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log("¡La pajarita está lista!");
-});
-
-client.user.setGame('Experimentar con tu corazón.');
+    client.user.setGame('Experimentar con tu corazón.');
 });
 
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
+    
+client.on("message", (message) => {
+    if (message.content.startsWith(prefix + "ping")) {
+      message.channel.send("pong uwu");
+    }
     
 const palabras = [":v", "c mamo", ":'v", ":,v", "V:", ":y", ":u", "u:", "v:", "V:", ":V", ">:v", ">:V", "v:<", "V:<", "alv", "kha", "Ecks di"];
     if(palabras.some(p => message.content.includes(p))){

@@ -7,8 +7,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'HG!amame') {
+        message.reply('NO');
   	}
     
 const palabras = [":v", "c mamo", ":'v", ":,v", "V:", ":y", ":u", "u:", "v:", "V:", ":V", ">:v", ">:V", "v:<", "V:<", "alv", "kha", "Ecks di", "papus", "mamus", "rico lino", "ricolino", "riko lino", "rikolino"];
@@ -17,12 +17,6 @@ const palabras = [":v", "c mamo", ":'v", ":,v", "V:", ":y", ":u", "u:", "v:", "V
       message.delete( );
     }
     
-const content = message.content.split(' ').slice(1);
-const args = content.join(' ');
-    
-client.on('message', message => {
-    if (message.content === 'HG!amame') {
-        message.reply('NO');
   });
 
 // THIS  MUST  BE  THIS  WAY

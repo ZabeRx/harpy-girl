@@ -6,10 +6,10 @@ client.on('ready', () => {
     client.user.setGame('Experimentar con tu corazón.');
 });
 
-client.on('message', message => {
-    if (message.content === 'HG!amame') {
-        message.reply('NO');
-  	}
+client.on("message", (message) => {
+    if (message.content.startsWith(process.env.PREFIX + "ping")) {
+        message.channel.send("pong uwu");
+    }
     
 const palabras = [":v", "c mamo", ":'v", ":,v", "V:", ":y", ":u", "u:", "v:", "V:", ":V", ">:v", ">:V", "v:<", "V:<", "alv", "kha", "Ecks di", "papus", "mamus", "rico lino", "ricolino", "riko lino", "rikolino"];
     if(palabras.some(p => message.content.includes(p))){

@@ -11,12 +11,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     
-client.on("message", (message) => {
-    if (message.content.startsWith(prefix + "ping")) {
-      message.channel.send("pong uwu");
-    }
-    
-const palabras = [":v", "c mamo", ":'v", ":,v", "V:", ":y", ":u", "u:", "v:", "V:", ":V", ">:v", ">:V", "v:<", "V:<", "alv", "kha", "Ecks di"];
+const palabras = [":v", "c mamo", ":'v", ":,v", "V:", ":y", ":u", "u:", "v:", "V:", ":V", ">:v", ">:V", "v:<", "V:<", "alv", "kha", "Ecks di", "papus", "mamus", "rico lino", "ricolino", "riko lino", "rikolino"];
     if(palabras.some(p => message.content.includes(p))){
 
       message.delete( );

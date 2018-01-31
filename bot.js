@@ -16,6 +16,9 @@ const palabras = [":v", "c mamo", ":'v", ":,v", "V:", ":y", ":u", "u:", "v:", "V
 
       message.delete( );
     }
+client.on('message', message => {
+    if (message.content === 'HG!amame') {
+        message.reply('NO');
   });
 
 // THIS  MUST  BE  THIS  WAY

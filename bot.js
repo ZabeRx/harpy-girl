@@ -3,8 +3,9 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log("¡La pajarita está lista!");
-  
-   client.user.setGame('Experimentando con tu corazón.');
+});
+
+client.user.setGame('Experimentar con tu corazón.');
 });
 
 client.on('message', message => {
